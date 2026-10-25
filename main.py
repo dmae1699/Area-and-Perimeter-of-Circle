@@ -1,10 +1,11 @@
+import math
 class Circle:
     def __init__(self,radius):
         self.radius=radius
     def area(self):
-        return 3.14*(self.radius**2)      
+        return math.pi*(self.radius**2)      
     def perimeter(self):
-        return 3.14*(self.radius*2)
+        return math.pi*(self.radius*2)
 number = float(input("Enter a radius: "))
 my_circle = Circle(number)
 
